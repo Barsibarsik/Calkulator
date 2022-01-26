@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "Калькулятор.css">
+</head>
+<body>
+    
+    <div class = "divleft">
+            <form>
+            <input disabled class="calcwindow" id="calcwindow" value="0" type="text" placeholder="000000000000000000" >
+        
+        <div class="calcbuttons">
+            <table>
+                <tr class="buttons_row">
+                    <td><button type="button" class="clearBtn btn" id="btnCE">CE</button></td>
+                    <td><button type="button" class="clearBtn btn" id="btnC" >C</button></td>
+                    <td><button type="button" class="operation btn" value="Деление">/</button></td>
+                    <td><button type="button" class="operation btn" value="Умножение">*</button></td>
+                    </tr>
+                    <tr>
+                    <td><button type="button" class="number btn">7</button></td>
+                    <td><button type="button" class="number btn">8</button></td>
+                    <td><button type="button" class="number btn">9</button></td>
+                    <td><button type="button" class="operation btn" value="Вычитание">-</button></td>
+                    </tr>
+                    <tr>
+                    <td><button type="button" class="number btn">4</button></td>
+                    <td><button type="button" class="number btn">5</button></td>
+                    <td><button type="button" class="number btn">6</button></td>
+                    <td><button type="button" class="operation btn" value="Сложение">+</button></td>
+                    </tr>
+                    <tr>
+                    <td><button type="button" class="number btn">1</button></td>
+                    <td><button type="button" class="number btn">2</button></td>
+                    <td><button type="button" class="number btn">3</button></td>
+                    <td rowspan="2"><button type="button" class="operation btn" id="btnravno" value="Результат">=</button></td>    
+                    </tr>
+                    <tr>
+                    <td colspan="2"><button type="button" class="number btn" id="btn0">0</button></td>
+                    <td><button type="button" id="decimal" class="btn">.</button></td>    
+                    </tr>
+    
+                </tr>
+            </table>
+        </div>
+    </form>
+    </div>
+    <div class = "divright">
+        <div class="How">
+        <h1>Простой калькулятор</h1>
+        <a href="#" id="howWorkBtn">Как это работает?</a>
+       </div> 
+    <div class="divList">
+            <ul id="operationsList">
+
+            </ul>
+        </div></div>
+    
+    
+    <script src="Калькулятор.js"></script>
+</body>
+</html>
